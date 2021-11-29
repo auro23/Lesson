@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lesson">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_baseline_person_pin_24"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".clasvideo"/>
+        <activity android:name=".ayudaalumn"> android:screenOrientation="portrait"</activity>
+        <activity android:name=".seccayuda" > android:screenOrientation="portrait"</activity>
+        <activity android:name=".clasemaest" > android:screenOrientation="portrait"</activity>
+        <activity android:name=".menumaes" > android:screenOrientation="portrait"</activity>
+        <activity android:name=".registroalum" > android:screenOrientation="portrait"</activity>
+        <activity android:name=".opcion" > android:screenOrientation="portrait"</activity>
+        <activity android:name=".progress">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".inicio" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

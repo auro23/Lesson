@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    android:background="#F7FFFFFF"
+    android:minWidth="19dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:background="#F7FFFFFF"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7FFFFFF"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFFFFF"
+
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                app:subtitleTextColor="#FFFFFF"
+                app:titleTextColor="#FFFFFF" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="678dp"
+                android:background="@drawable/fondoayudaovejin"
+                tools:context=".ayudaalumn">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:fontFamily="@font/chelsea_market"
+                    android:text="Preguntas frecuentes"
+                    android:textAlignment="center"
+                    android:textColor="#333"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/imginsta"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/instagram"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.882"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLine3"
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="10dp"
+                    android:padding="20dp"
+                    android:text="¿Cómo puedo consultar los recursos didácticos? Los recursos didácticos se consultan dando clic en el menú lateral y eligiendo la opción recursos didácticos, si eres alumno podras visualizar los recursos compartidos por tu profesor. "
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="10dp"
+                    android:padding="20dp"
+                    android:text="¿Como puedo iniciar sesión con Google? Puedes iniciar sesión con tu cuenta Google desde el apartado iniciar sesión, el cuál podras elegir con cual cuenta, registrada en tu movíl, deseas acceder"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/chelsea_market"
+                    android:text="Soporte"
+                    android:textAlignment="center"
+                    android:textColor="#333"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.81"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3" />
+
+                <ImageView
+                    android:id="@+id/imgfacebook"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/face"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.706"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/headeralum"
+        app:menu="@menu/drawer_menualum">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

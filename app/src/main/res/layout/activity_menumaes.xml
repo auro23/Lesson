@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    android:background="#F7FFFFFF"
+    android:minWidth="19dp">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:background="#F7FFFFFF"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7FFFFFF"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFFFFF"
+
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                app:subtitleTextColor="#FFFFFF"
+                app:titleTextColor="#FFFFFF" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="673dp"
+                android:background="@drawable/ovejinmaestro"
+                tools:context=".menumaes">
+
+
+                <TextView
+                    android:id="@+id/txttitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="#fff"
+                    android:fontFamily="@font/chelsea_market"
+                    android:text="Recursos didácticos"
+                    android:textAlignment="center"
+                    android:textColor="#333"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edtvideo"
+                    android:layout_width="144dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="40dp"
+                    android:backgroundTint="#333"
+
+                    android:ems="10"
+                    android:enabled="false"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtpdf" />
+
+                <Button
+                    android:id="@+id/btnpdf"
+                    android:layout_width="134dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/bordeboton"
+                    android:text="Subir PDF"
+                    android:textColor="#fff"
+                    app:layout_constraintEnd_toStartOf="@+id/edtpdf"
+                    app:layout_constraintHorizontal_bias="0.022"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttitle" />
+
+                <Button
+                    android:id="@+id/btnvideo"
+                    android:layout_width="134dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/bordeboton"
+                    android:text="Subir video"
+                    android:textColor="#fff"
+                    app:layout_constraintEnd_toStartOf="@+id/edtvideo"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnpdf" />
+
+                <Spinner
+
+                    android:id="@+id/spgrupo"
+                    android:layout_width="152dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="76dp"
+                    android:background="#FFFEFE"
+                    android:contextClickable="true"
+                    android:dropDownSelector="@color/black"
+                    android:foregroundTint="#000000"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:verticalScrollbarPosition="left"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spgrado" />
+
+                <Spinner
+                    android:id="@+id/spgrado"
+                    android:layout_width="152dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="76dp"
+                    android:background="#FFFEFE"
+                    android:contextClickable="true"
+                    android:dropDownSelector="@color/black"
+                    android:foregroundTint="#000000"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:verticalScrollbarPosition="left"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/txtgr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:text="Grado:"
+                    android:textColor="#333"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/spgrado"
+                    app:layout_constraintHorizontal_bias="0.977"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:fontFamily="@font/chelsea_market"
+                    android:text="Sube los recursos que utilizaremos..."
+                    android:textColor="#333"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtgrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:text="Grupo:"
+                    android:textColor="#333"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/spgrupo"
+                    app:layout_constraintHorizontal_bias="0.973"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtgr" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="112dp"
+                    android:fontFamily="@font/chelsea_market"
+                    android:text="°Asigna el grupo y materia°"
+                    android:textColor="#333"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.263"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnpdf" />
+
+                <Button
+                    android:id="@+id/btnsubir"
+                    android:layout_width="154dp"
+                    android:layout_height="51dp"
+                    android:layout_marginBottom="120dp"
+                    android:background="@drawable/bordeboton"
+                    android:text="Listo"
+                    android:textColor="#fff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.19"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Spinner
+
+                    android:id="@+id/spmaterias"
+                    android:layout_width="185dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="52dp"
+                    android:background="#FFFEFE"
+                    android:dropDownSelector="@color/black"
+                    android:foregroundTint="#000000"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spgrupo" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:text="Materia:"
+                    android:textColor="#333"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/spmaterias"
+                    app:layout_constraintHorizontal_bias="0.966"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtgrp" />
+
+                <EditText
+                    android:id="@+id/edtpdf"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="40dp"
+                    android:backgroundTint="#333"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer_menu">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

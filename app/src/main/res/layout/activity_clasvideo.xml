@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clasvideo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+
+            android:id="@+id/spmaterias"
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="#C7D6E0"
+            android:dropDownSelector="@color/black"
+            android:foregroundTint="#000000"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toEndOf="@+id/txtvadio"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <ListView
+            android:id="@+id/listavideos"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:layout_marginTop="20dp"
+            android:background="#CAE4F1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="2dp"
+            android:layout_height="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/vervideos"
+            android:layout_width="225dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bordeboton"
+            android:text="Ver videos disponibles"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spmaterias" />
+
+        <TextView
+            android:id="@+id/txtvadio"
+            android:layout_width="88dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Materia:"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Selecciona una materia"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/comfortaa_light"
+            android:text="Elige un video"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vervideos" />
+
+        <ImageView
+            android:id="@+id/imagenovejin"
+            android:layout_width="255dp"
+            android:layout_height="332dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/videoovejin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+
+        android:id="@+id/group1">
+        <item android:id="@+id/nav_materia"
+            android:icon="@drawable/ic_baseline_smartphone_24"
+            android:title="Recursos didácticos">
+        </item>
+        <item android:id="@+id/nav_classe"
+            android:icon="@drawable/ic_baseline_menu_book_24"
+            android:title="Clases">
+        </item>
+
+        <item android:id="@+id/nav_alumn"
+            android:icon="@drawable/ic_baseline_school_24"
+            android:title="Alumnos">
+        </item>
+        </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item android:id="@+id/nav_ayud"
+            android:icon="@drawable/ic_baseline_policy_24"
+            android:title="Ayuda">
+        </item>
+        <item android:id="@+id/nav_redes"
+            android:icon="@drawable/ic_baseline_favorite_border_24"
+            android:title="Redes sociales">
+        </item>
+        <item android:id="@+id/nav_sesion"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Cerrar sesión">
+        </item>
+    </group>
+
+</menu>
